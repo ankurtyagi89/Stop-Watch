@@ -5,8 +5,10 @@ const Timer = document.querySelector(".timer");
 const Timer1 = document.querySelector(".timer1");
 const Timer2 = document.querySelector(".timer2");
 const time = new Date("December 25, 1995 23:00:00");
-let min = String(time.getMinutes()).padStart(2, '0');
-let sec = String(time.getSeconds()).padStart(2, '0');
+// let min = String(time.getMinutes()).padStart(2, '0');
+// let sec = String(time.getSeconds()).padStart(2, '0');
+let min = time.getMinutes();
+let sec = time.getSeconds();
 Timer1.innerHTML = `${min}`;
 Timer2.innerHTML = `${sec}`;
 
